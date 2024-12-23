@@ -1,0 +1,43 @@
+.wrapper {
+  min-height: 500px;
+  height: 800px;
+  background-size: contain; /* Resmin tamamını gösterir */
+  background-position: center; /* Resmi yatay ve dikey olarak ortalar */
+  background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+  background-image: url(https://images.unsplash.com/photo-1722410180651-efd51636f260?q=80&w=1792&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.form {
+  border-right: 1px solid var(--mantine-color-gray-3);
+  min-height: 900px;
+  max-width: 450px;
+  padding-top: 80px;
+
+  @media (max-width: 768px) {
+    border-right: none;
+    max-width: 100%;
+    padding: 20px; /* Daha dar ekranlar için padding düzenlemesi */
+  }
+}
+
+.title {
+  color: var(--mantine-color-black);
+  font-family: Greycliff CF, var(--mantine-font-family);
+}
+
+/* Mobil ve tablet cihazlar için genel düzenleme */
+@media (max-width: 768px) {
+  .wrapper {
+    height: auto; /* Yüksekliği içerik kadar ayarlayın */
+    background-size: cover; /* Daha iyi görünüm için resmi kaplatın */
+  }
+
+  .form {
+    min-height: auto; /* Daha küçük ekranlarda otomatik yükseklik */
+  }
+
+  .title {
+    font-size: 1.5rem; /* Başlık boyutunu küçült */
+    text-align: center; /* Başlık ortalanabilir */
+  }
+}

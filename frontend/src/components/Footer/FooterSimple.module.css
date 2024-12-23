@@ -1,0 +1,23 @@
+.footer {
+  margin-top: 120px;
+  border-top: 1px solid var(--mantine-color-gray-2, lightgray); /* lightgray fallback eklendi */
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: var(--mantine-spacing-xl);
+  padding-bottom: var(--mantine-spacing-xl);
+
+  @media (max-width: 576px) {
+    /* Mantine xs breakpoint 576px'ye denk geliyor */
+    flex-direction: column;
+  }
+}
+
+.links {
+  @media (max-width: 576px) {
+    margin-top: var(--mantine-spacing-md);
+  }
+}
